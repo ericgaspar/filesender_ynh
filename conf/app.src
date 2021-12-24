@@ -1,7 +1,6 @@
-SOURCE_URL=url of app's source
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=https://github.com/filesender/filesender/archive/refs/tags/master-filesender-2.30.zip
+SOURCE_SUM=cfb969774578897e20e1b4743d6ec06307871fdcee8eb1b730bc8ce0c567ce90
 SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
+SOURCE_FORMAT=zip
 SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=
 SOURCE_EXTRACT=true
