@@ -1,0 +1,2 @@
+
+* * * * * __APP__ /usr/bin/php__PHPVERSION__ __FINALPATH__/filesender/scripts/task/cron.php > /dev/null
