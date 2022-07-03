@@ -135,7 +135,7 @@ chmod 400 "$final_path/config/config.php"
 chown $app:$app "$final_path/config/config.php"
 
 
-php$phpversion $final_path/scripts/upgrade/database.php
+#php$phpversion $final_path/scripts/upgrade/database.php
 
 #=================================================
 # SETUP A CRON
