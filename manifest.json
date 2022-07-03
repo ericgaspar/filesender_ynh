@@ -37,12 +37,6 @@
                 "type": "domain"
             },
             {
-                "name": "path",
-                "type": "path",
-                "example": "/filesender",
-                "default": "/filesender"
-            },
-            {
                 "name": "admin",
                 "type": "user"
             },
