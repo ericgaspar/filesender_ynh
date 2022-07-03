@@ -46,15 +46,15 @@
 //              General settings
 // ---------------------------------------------
 // 
-$config['site_url'] = '__DOMAIN____PATH__';                // String, URL of the application
+$config['site_url'] = '__DOMAIN__';         // String, URL of the application
 // 
 $config['admin'] = '__ADMIN__';            // String, UID's (from  $config['saml_uid_attribute']) 
-                                    // that have Administrator permissions
+                                           // that have Administrator permissions
 
 $config['admin_email'] ='__EMAIL__';       // String, email  address(es, separated by ,) 
-                                    // to receive administrative messages (low disk  space warning)
+                                           // to receive administrative messages (low disk  space warning)
 
-//$config['email_reply_to'] ='';    // String, default no-reply email  address
+//$config['email_reply_to'] ='';           // String, default no-reply email  address
 
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
@@ -66,20 +66,20 @@ $config['admin_email'] ='__EMAIL__';       // String, email  address(es, separat
 // ---------------------------------------------
 // MariaDB/MySQL DB configuration
 // ---------------------------------------------
-$config["db_type"] ='mysql';
-$config['db_host'] ='localhost';
-$config['db_database'] ='__DB_NAME__';
-$config['db_username'] ='__DB_NAME__';
-$config['db_password'] ='__DB_PWD__';
+//$config["db_type"] ='mysql';
+//$config['db_host'] ='localhost';
+//$config['db_database'] ='filesender';
+//$config['db_username'] ='filesender';
+//$config['db_password'] ='';
 
 // ---------------------------------------------
 // PostgreSQL DB configuration
 // ---------------------------------------------
-//$config["db_type"] ='pgsql';     
-//$config['db_host'] ='localhost';       
-//$config['db_database'] ='filesender';  
-//$config['db_username'] ='filesender';  
-//$config['db_password'] ='';            
+$config["db_type"] ='pgsql';     
+$config['db_host'] ='localhost';       
+$config['db_database'] ='__DB_NAME__';  
+$config['db_username'] ='__DB_USER__';  
+$config['db_password'] ='__DB_PWD__';            
 
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
@@ -127,12 +127,12 @@ $config['db_password'] ='__DB_PWD__';
 //    TeraSender high speed upload module             
 // --------------------------------------------------
 
-$config['terasender_enabled'] = true;    	// 
-$config['terasender_advanced'] = true;    	// Make #webworkers configurable in UI.  Switched this on to make it easy 
-						// to determine optimal number for terasender_worker_count when going in production.  
-						// The useful number of maximum webworkers per browser changes nearly for each browser release.
-$config['terasender_worker_count'] = 5;   	// Number of web workers to launch simultaneously client-side when starting upload
-$config['terasender_start_mode'] = 'single';	// I think I prefer to show a nice serial predictable upload process
+$config['terasender_enabled'] = true;     // 
+$config['terasender_advanced'] = true;      // Make #webworkers configurable in UI.  Switched this on to make it easy 
+            // to determine optimal number for terasender_worker_count when going in production.  
+            // The useful number of maximum webworkers per browser changes nearly for each browser release.
+$config['terasender_worker_count'] = 5;     // Number of web workers to launch simultaneously client-side when starting upload
+$config['terasender_start_mode'] = 'single';  // I think I prefer to show a nice serial predictable upload process
 
 
 // ---------------------------------------------
