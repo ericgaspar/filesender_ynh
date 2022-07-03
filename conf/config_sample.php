@@ -46,15 +46,15 @@
 //              General settings
 // ---------------------------------------------
 // 
-$config['site_url'] = 'https://__DOMAIN__';         // String, URL of the application
+$config['site_url'] = 'https://__DOMAIN__/';     // String, URL of the application
 // 
-$config['admin'] = '__ADMIN__';            // String, UID's (from  $config['saml_uid_attribute']) 
-                                           // that have Administrator permissions
+$config['admin'] = '__ADMIN__';                  // String, UID's (from  $config['saml_uid_attribute']) 
+                                                 // that have Administrator permissions
 
-$config['admin_email'] ='__EMAIL__';       // String, email  address(es, separated by ,) 
-                                           // to receive administrative messages (low disk  space warning)
+$config['admin_email'] ='__EMAIL__';             // String, email  address(es, separated by ,) 
+                                                 // to receive administrative messages (low disk  space warning)
 
-//$config['email_reply_to'] ='';           // String, default no-reply email  address
+//$config['email_reply_to'] ='';                 // String, default no-reply email  address
 
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
