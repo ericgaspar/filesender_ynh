@@ -46,7 +46,7 @@
 //              General settings
 // ---------------------------------------------
 // 
-$config['site_url'] = '__DOMAIN__';         // String, URL of the application
+$config['site_url'] = 'https://__DOMAIN__';         // String, URL of the application
 // 
 $config['admin'] = '__ADMIN__';            // String, UID's (from  $config['saml_uid_attribute']) 
                                            // that have Administrator permissions
