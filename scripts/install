@@ -31,6 +31,7 @@ is_public=$YNH_APP_ARG_IS_PUBLIC
 password=$YNH_APP_ARG_PASSWORD
 salt=$(ynh_string_random --length=24)
 email=$(ynh_user_get_info --username=$admin --key="mail")
+phpversion=$YNH_PHP_VERSION
 
 app=$YNH_APP_INSTANCE_NAME
 
@@ -93,18 +94,6 @@ chmod 750 "$final_path"
 chmod -R o-rwx "$final_path"
 chown -R $app:www-data "$final_path"
 
-saml_path=/opt/filesender
-mkdir -p $saml_path
-
-ynh_setup_source --dest_dir="$saml_path" --source_id=simplesamlphp
-
-pushd $saml_path/simplesaml
- 	cp -r config-templates/*.php config/
-	cp -r metadata-templates/*.php metadata/
-popd
-
-ynh_add_config --template="../conf/config.php" --destination="/opt/filesender/simplesaml/config/config.php"
-
 #=================================================
 # NGINX CONFIGURATION
 #=================================================
@@ -146,7 +135,7 @@ chmod 400 "$final_path/config/config.php"
 chown $app:$app "$final_path/config/config.php"
 
 
-php /opt/filesender/filesender/scripts/upgrade/database.php
+php$phpversion $final_path/scripts/upgrade/database.php
 
 #=================================================
 # SETUP SSOWAT
