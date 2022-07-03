@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/filesender/filesender/archive/refs/tags/master-filesender-2.30.zip
-SOURCE_SUM=cfb969774578897e20e1b4743d6ec06307871fdcee8eb1b730bc8ce0c567ce90
+SOURCE_URL=https://github.com/filesender/filesender/archive/refs/tags/master-filesender-2.32.zip
+SOURCE_SUM=c3efa1031a52e99dc31c752f527f2f0751515909a229444d3083230022311312
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=zip
 SOURCE_IN_SUBDIR=true
