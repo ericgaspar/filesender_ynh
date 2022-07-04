@@ -1,0 +1,7 @@
+SOURCE_URL=https://github.com/simplesamlphp/simplesamlphp/releases/download/v1.19.6/simplesamlphp-1.19.6.tar.gz
+SOURCE_SUM=834bb4a89d63d7498e77cceb49e01b919d1c0a6a3d38a992f905810dad424b7c
+SOURCE_SUM_PRG=sha256sum
+SOURCE_FORMAT=tar.gz
+SOURCE_IN_SUBDIR=true
+SOURCE_FILENAME=simplesaml
+SOURCE_EXTRACT=true

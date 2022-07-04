@@ -96,6 +96,16 @@ chown -R $app:www-data "$final_path"
 
 mkdir -p $final_path/tmp $final_path/files $final_path/log
 
+#=================================================
+# DOWNLOAD, CHECK AND UNPACK SOURCE
+#=================================================
+ynh_script_progression --message="Setting up source files..." --time --weight=1
+
+ynh_app_setting_set --app=$app --key=final_path --value=$final_path
+# Download, check integrity, uncompress and patch the source from app.src
+ynh_setup_source --dest_dir="/opt/simplesaml" --source_id=simplesaml
+
+ln -s /opt/simplesaml/simplesaml $final_path/simplesaml
 
 #=================================================
 # NGINX CONFIGURATION
