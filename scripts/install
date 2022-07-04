@@ -93,6 +93,7 @@ mkdir -p $final_path/tmp $final_path/files $final_path/log
 
 ynh_setup_source --dest_dir="/opt/simplesaml" --source_id=simplesaml
 ln -s /opt/simplesaml/simplesaml $final_path/simplesaml
+ynh_add_config --template="../conf/simplesaml.config.php" --destination="/opt/simplesaml/config/config.php"
 
 chmod 750 "$final_path"
 chmod -R o-rwx "$final_path"
@@ -134,6 +135,7 @@ chown -R $app:www-data "$datadir"
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
 ynh_add_config --template="../conf/config_sample.php" --destination="$final_path/config/config.php"
+ynh_add_config --template="../conf/simplesaml.config.php" --destination="/opt/simplesaml/config/config.php"
 
 #chmod 400 "$final_path/config/config.php"
 chown $app:$app "$final_path/config/config.php"
