@@ -94,7 +94,7 @@ mkdir -p $final_path/tmp $final_path/files $final_path/log
 ynh_setup_source --dest_dir="/opt/simplesaml" --source_id=simplesaml
 ln -s /opt/simplesaml/simplesaml $final_path/simplesaml
 ynh_add_config --template="../conf/simplesaml.config.php" --destination="/opt/simplesaml/config/config.php"
-ynh_add_config --template="../conf/authsources.php.php" --destination="/opt/simplesaml/config/authsources.php.php"
+ynh_add_config --template="../conf/authsources.php" --destination="/opt/simplesaml/config/authsources.php.php"
 
 chmod 750 "$final_path"
 chmod -R o-rwx "$final_path"
