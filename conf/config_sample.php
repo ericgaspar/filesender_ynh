@@ -54,7 +54,7 @@ $config['admin'] = '__ADMIN__';                  // String, UID's (from  $config
 $config['admin_email'] ='__EMAIL__';             // String, email  address(es, separated by ,) 
                                                  // to receive administrative messages (low disk  space warning)
 
-//$config['email_reply_to'] ='';                 // String, default no-reply email  address
+$config['email_reply_to'] ='__EMAIL__';          // String, default no-reply email  address
 
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
